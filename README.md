@@ -1,2 +1,1 @@
-# CI-CD_Practical_Assignment
-CI/CD_Practical_Assignment
+# ustp-cicd-ws2026
