@@ -17,13 +17,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v7
 
-      - name: Set up .NET
-        uses: actions/setup-dotnet@v6
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
         with:
-          dotnet-version: '10.0.404'
+          node-version: '22'
 
-      - name: Restore dependencies
-        run: dotnet restore
+      - name: Install dependencies
+        run: npm install
 
       - name: Build project
-        run: dotnet build --configuration Release --no-restore
+        run: npm run build
